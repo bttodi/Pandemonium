@@ -1,0 +1,133 @@
+type: missile
+template: MissileUnitType
+lifetime: 300
+speed: 4
+health: 240
+rotateSpeed: 0.2
+missileAccelTime: 60
+trailLength: 48
+engineSize: 4
+engineColor: f08dd5
+trailColor: f08dd5
+deathSound: none
+deathExplosionEffect: none
+hidden: true
+weapons: [
+	{
+	shootCone: 360
+	shootOnDeath: true
+	shootSound: none
+	bullet: {
+		type: ExplosionBulletType
+		damage: 0
+		splashDamage: 0.01
+		splashDamageRadius: 120
+		status: pandemonium-putty-rage
+		statusDuration: 1800
+		displayAmmoMultiplier: false
+		shootEffect: none
+		smokeEffect: none
+		despawnUnit: pandemonium-puttypl
+		despawnSound: titanExplosion
+		killShooter: true
+		despawnEffect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: WaveEffect
+					colorFrom: f08dd5
+					colorTo: 985bb0
+					lightColor: f08dd5
+					lightScl: 1.5
+					interp: pow10Out
+					sizeFrom: 0
+					sizeTo: 120
+					strokeFrom: 10
+					lifetime: 300
+				}
+				{
+					type: WaveEffect
+					colorFrom: f08dd5
+					colorTo: 985bb0
+					lightColor: f08dd5
+					lightScl: 1.5
+					interp: circleOut
+					sizeFrom: 120
+					sizeTo: 120
+					strokeFrom: 5
+					lifetime: 300
+				}
+				{
+					type: ParticleEffect
+					colorFrom: f08dd5
+					colorTo: 985bb0
+					lightColor: f08dd5
+					lightScl: 1.2
+					interp: pow10Out
+					sizeInterp: pow10In
+					sizeFrom: 40
+					particles: 20
+					lifetime: 330
+					length: 120
+				}
+				{
+					type: ParticleEffect
+					colorFrom: f08dd5
+					colorTo: 985bb0
+					lightColor: f08dd5
+					lightScl: 1.2
+					interp: pow10Out
+					sizeInterp: pow10In
+					sizeFrom: 30
+					particles: 20
+					lifetime: 300
+					length: 120
+				}
+				{
+					type: ParticleEffect
+					colorFrom: f08dd5
+					colorTo: 985bb0
+					lightColor: f08dd5
+					lightScl: 1.2
+					interp: pow10Out
+					sizeInterp: pow10In
+					sizeFrom: 20
+					particles: 20
+					lifetime: 270
+					length: 120
+				}
+			]
+		}
+		}
+	}
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    y: -2.5
+    minSpeed: -1
+    maxSpeed: -1
+    chance: 1
+    length: 0
+    damage: 0
+    shootSound: none
+    shootEffect: none
+    bullet: {
+      type: RailBulletType
+      length: 5
+      damage: 1
+      setDefaults: false
+      despawnHit: false
+      fragBullets: 1
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        damage: 0
+        hitEffect: none
+        despawnEffect: none
+        killShooter: true
+      }
+    }
+  }
+]

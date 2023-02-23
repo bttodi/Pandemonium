@@ -1,0 +1,33 @@
+name: strongbox
+localizedName: Strongbox
+description: "Constructs Sombre units. Outputted units cannot be upgraded."
+type: UnitFactory
+health: 6480
+size: 5
+buildVisibility: shown
+category: units
+research: pandemonium-incubator
+researchCostMultiplier: 0.5
+consumes: {
+	power: 6
+	liquid: nitrogen/0.1
+}
+plans: [
+	{
+	unit: pandemonium-sombre
+	time: 5400
+	requirements: [
+		silicon/200
+		tungsten/700
+		thorium/160
+		pandemonium-sulfur/300
+		]
+	}
+]
+requirements: [
+	silicon/250
+	tungsten/450
+	thorium/350
+	surge-alloy/200
+	pandemonium-sulfur/360
+]

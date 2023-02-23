@@ -1,0 +1,13 @@
+name: sulfur-fervor
+localizedName: Sulfur Fervor
+reloadMultiplier: 1.25
+speedMultiplier: 1.35
+healthMultiplier: 1.15
+color: ffffa3
+effectChance: 1
+effect: {
+	type: ParticleEffect
+	particles: 1
+	colorFrom: e8d174
+	colorTo: e8d174
+}

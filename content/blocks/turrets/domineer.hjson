@@ -1,0 +1,110 @@
+type: PowerTurret
+name: domineer
+localizedName: Domineer
+description: "jffjbqcf9ma5wekzrgue8p8r9"
+category: turret
+research: pandemonium-discipline
+health: 7680
+armor: 44
+size: 5
+canOverdrive: false
+absorbLasers: true
+buildVisibility: shown
+targetAir: true
+targetGround: true
+range: 480
+reload: 55
+shootSound: largeCannon
+recoil: 16
+shake: 16
+shootY: 32
+researchCostMultiplier: 0.5
+consumes: {
+	power: 50
+	}
+shootType: {
+	ammoMultiplier: 1
+	type: BasicBulletType
+	layer: 99
+	damage: 1600
+	buildingDamageMultiplier: 0.3
+	hitSize: 24
+	pierce: true
+	pierceBuilding: true
+	pierceArmor: true
+	reflectable: false
+	absorbable: false
+	lifetime: 120
+	width: 16
+	height: 16
+	speed: 4
+	spin: -6
+	sprite: pandemonium-square
+	backSprite: pandemonium-square
+	frontColor: ff2070
+	backColor: ff2070
+	shrinkY: 0
+	homingPower: 0.1
+	homingDelay: 30
+	despawnEffect: none
+	hitEffect: none
+	weaveScale: 10
+	weaveMag: 1
+	trailChance: 2
+	trailEffect: {
+		type: ParticleEffect
+		startDelay: 1
+		particles: 1
+		lifetime: 30
+		sizeFrom: 8
+		colorFrom: ffffff
+		colorTo: ff2070
+		randLength: false
+		interp: pow3Out
+		sizeInterp: pow5Out
+		length: 0
+		lightScl: 0
+		layer: 98.9
+	}
+	smokeEffect: none
+	shootEffect: {
+		type: ParticleEffect
+		particles: 20
+		lifetime: 64
+		baseLength: 32
+		length: 64
+		spin: -15
+		sizeFrom: 4
+		layer: 99
+		region: pandemonium-square
+		colorFrom: ffffff
+		colorTo: ff2070
+		lightScl: 0
+		interp: pow4Out
+		sizeInterp: linear
+		cone: 25
+	}
+}
+drawer:[
+	{
+		type: DrawTurret
+		basePrefix: "reinforced-"
+		parts: [
+			{
+				type: RegionPart
+				suffix: "-barrel"
+				y: 32
+				moveY: -12
+				progress: reload
+				outline: false
+			}
+		]
+	}
+]
+requirements: [
+	graphite/1500
+	silicon/1500
+	thorium/1500
+	surge-alloy/500
+	pandemonium-shunjeet/250
+]

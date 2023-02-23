@@ -1,0 +1,41 @@
+name: wisp
+localizedName: Wisp
+description: "Follows and repairs nearby allied units."
+type: flying
+flying: true
+canAttack: false
+faceTarget: false
+speed: 2
+health: 540
+range: 64
+itemCapacity: 0
+hitSize: 12
+drag: 0.05
+accel: 0.1
+targetAir: false
+targetGround: false
+defaultController: DefenderAI
+research: {
+	parent: pandemonium-hatchery
+	requirements: [
+		pandemonium-putty/1000
+	]
+}
+weapons: [
+	{
+	name: wisp-weapon
+	type: RepairBeamWeapon
+	top: true
+	mirror: false
+	x: 0
+	y: 2
+	beamWidth: 0.5
+	repairSpeed: 0.8
+	recentDamageMultiplier: 1
+	rotate: true
+	bullet: {
+		type: BulletType
+		maxRange: 96
+		}
+	}
+]

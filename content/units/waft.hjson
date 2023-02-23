@@ -1,0 +1,68 @@
+name: waft
+localizedName: Waft
+description: "Provides offensive buffs to nearby allied units."
+type: flying
+flying: true
+faceTarget: false
+speed: 1
+health: 4400
+armor: 6
+rotateSpeed: 1.5
+range: 128
+itemCapacity: 0
+hitSize: 36
+lowAltitude: true
+drag: 0.05
+accel: 0.1
+targetAir: false
+targetGround: false
+research: {
+	parent: pandemonium-compound
+	requirements: [
+		pandemonium-putty/6400
+	]
+}
+immunities: [ pandemonium-wicked ]
+engines: [
+	{
+		x: 0
+		y: -20
+		radius: 6
+		rotation: 270
+	}
+]
+abilities: [
+	{
+		type: StatusFieldAbility
+		effect: pandemonium-wicked
+		duration: 900
+		range: 128
+		reload: 600
+		activeEffect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: WaveEffect
+					colorFrom: ffffff
+					colorTo: ff2070
+					sizeFrom: 128
+					sizeTo: 128
+					interp: pow3Out
+					lifetime: 120
+					strokeFrom: 3
+				}
+				{
+					type: WaveEffect
+					colorFrom: ffffff
+					colorTo: ff2070
+					sizeFrom: 0
+					sizeTo: 128
+					interp: pow3Out
+					sizeInterp: pow5In
+					lifetime: 120
+					strokeFrom: 5
+				}
+			]
+		}
+	}
+]

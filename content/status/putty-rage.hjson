@@ -1,0 +1,13 @@
+name: putty-rage
+localizedName: Putty Rage
+reloadMultiplier: 1.5
+speedMultiplier: 1.75
+healthMultiplier: 1.25
+color: f08dd5
+effectChance: 1
+effect: {
+	type: ParticleEffect
+	particles: 1
+	colorFrom: 985bb0
+	colorTo: 985bb0
+}

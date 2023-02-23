@@ -1,0 +1,76 @@
+type: ItemTurret
+name: dread
+localizedName: Dread
+description: "Launches sulfur-loaded missiles, inflicting Sulfur Fervor on all units in a large area. Must be manually fired and cannot hit allied units directly."
+health: 6750
+category: units
+research: prime-refabricator
+size: 4
+buildVisibility: shown
+targetAir: false
+targetGround: false
+range: 1300
+fogRadiusMultiuplier: 0.5
+reload: 900
+shootCone: 2
+shootSound: missileLaunch
+recoil: 0
+rotateSpeed: 0.5
+shake: 16
+maxAmmo: 120
+ammoPerShot: 120
+shootY: 0
+ammoTypes: {
+	pandemonium-sulfur: {
+		ammoMultiplier: 1
+		type: BulletType
+		spawnUnit: pandemonium-sulfurm
+		smokeEffect: none
+		shootEffect: {
+			type: ParticleEffect
+			lifetime: 240
+			colorFrom: ffffa3bf
+			colorTo: e8d174bf
+			particles: 24
+			length: 32
+			sizeFrom: 6
+			sizeTo: 0
+			interp: pow10Out
+			sizeInterp: pow10In
+		}
+	}
+}
+shoot: {
+	firstShotDelay: 60
+}
+drawer:[
+	{
+		type: DrawTurret
+		basePrefix: "reinforced-"
+		parts: [
+			{
+				type: RegionPart
+				suffix: "-l"
+				moveY: -3
+				progress: warmup
+				x: -8
+				moveRot: 10
+			}
+			{
+				type: RegionPart
+				suffix: "-r"
+				moveY: -3
+				progress: warmup
+				x: 8
+				moveRot: -10
+			}
+		]
+	}
+]
+requirements: [
+	beryllium/750
+	graphite/600
+	silicon/500
+	oxide/250
+	thorium/550
+]

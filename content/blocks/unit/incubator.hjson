@@ -1,0 +1,31 @@
+name: incubator
+localizedName: Incubator
+description: "Constructs Gloom units. Outputted units cannot be upgraded."
+type: UnitFactory
+health: 2160
+size: 3
+buildVisibility: shown
+category: units
+research: tank-refabricator
+researchCostMultiplier: 0.5
+consumes: {
+	power: 4
+	liquid: ozone/0.05
+}
+plans: [
+	{
+	unit: pandemonium-gloom
+	time: 720
+	requirements: [
+		silicon/50
+		tungsten/40
+		pandemonium-sulfur/60
+		]
+	}
+]
+requirements: [
+	beryllium/220
+	silicon/140
+	tungsten/100
+	pandemonium-sulfur/120
+]

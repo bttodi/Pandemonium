@@ -1,0 +1,101 @@
+type: ItemTurret
+name: decadere
+localizedName: Decadere
+description: "Fires a fragmentary bolt over great distances. Prioritizes enemies with higher maximum health."
+category: turret
+research: afflict
+health: 4960
+size: 4
+buildVisibility: shown
+targetAir: true
+targetGround: true
+range: 720
+reload: 300
+shootCone: 2
+shootSound: railgun
+recoil: 4
+rotateSpeed: 0.5
+shake: 16
+maxAmmo: 60
+ammoPerShot: 10
+shootY: 0
+unitSort: strongest
+accurateDelay: false
+consumes: {
+	power: 2.5
+	}
+ammoTypes: {
+	pandemonium-sulfur: {
+	ammoMultiplier: 1
+	shootEffect: railShoot
+	type: RailBulletType
+	length: 720
+	damage: 1780
+	buildingDamageMultiplier: 0.3
+	pointEffect: railTrail
+	pierceEffect: railHit
+	pierceDamageFactor: 1680
+	pierce: false
+	fragOnAbsorb: false
+	pierceArmor: true
+	hitShake: 16
+	fragBullets: 5
+	fragSpread: 10
+	fragRandomSpread: 0
+	fragVelocityMin: 1
+	fragBullet: {
+		type: BasicBulletType
+		damage: 45
+		pierce: true
+		pierceArmor: true
+		lifetime: 20
+		speed: 8
+		reflectable: false
+		trailLength: 6
+		trailColor: ffffa3
+		homingPower: 0.5
+		homingDelay: 4
+		width: 12
+		height: 12
+		spin: -12
+		sprite: large-bomb
+		backSprite: large-bomb-back
+		hitEffect: teleportOut
+		despawnEffect: teleportOut
+		hitEffect: none
+		frontColor: ffffff
+		backColor: ffffa3
+		}
+	}
+}
+drawer:[
+	{
+		type: DrawTurret
+		basePrefix: "reinforced-"
+		parts: [
+			{
+				type: RegionPart
+				suffix: "-l"
+				moveX: -3
+				progress: warmup
+				x: -4
+			}
+			{
+				type: RegionPart
+				suffix: "-r"
+				moveX: 3
+				progress: warmup
+				x: 4
+			}
+		]
+	}
+]
+shoot: {
+	firstShotDelay: 60
+}
+requirements: [
+	tungsten/450
+	silicon/550
+	thorium/350
+	surge-alloy/200
+]

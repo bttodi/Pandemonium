@@ -1,0 +1,34 @@
+type: missile
+deathSound: none
+deathExplosionEffect: none
+hittable: false
+targetable: false
+speed: 0
+lifetime: 61
+physics: false
+drawBody: false
+drawEngines: false
+engineSize: 0
+drawCell: false
+createScorch: false
+hoverable: false
+drawMinimap: false
+hidden: true
+useUnitCap: false
+abilities: [
+	{
+	type: EnergyFieldAbility
+	status: slow
+	statusDuration: 30
+	range: 360
+	reload: 60
+	damage: 36
+	targetGround: false
+	shootSound: shotgun
+	targetGround: false
+	maxTargets: 4
+	healPercent: 0.5
+	sectors: 0
+	color: 85b0cc
+	}
+]

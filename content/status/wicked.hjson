@@ -1,0 +1,13 @@
+name: wicked
+localizedName: Wicked
+reloadMultiplier: 1.25
+damageMultiplier: 1.25
+speedMultiplier: 1.25
+color: ff2070
+effectChance: 1
+effect: {
+	type: ParticleEffect
+	particles: 1
+	colorFrom: ffffff
+	colorTo: ff2070
+}

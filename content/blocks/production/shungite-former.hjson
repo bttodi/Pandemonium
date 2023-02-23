@@ -1,0 +1,48 @@
+type: AttributeCrafter
+name: shungite-former
+localizedName: Shungite Former
+description: "Slowly forms shungite from graphite using vast amounts of power. Requires to be placed in hot locations."
+category: crafting
+buildVisibility: shown
+health: 1320
+size: 3
+hasItems: true
+hasPower: true
+itemCapacity: 20
+baseEfficiency: 0
+boostScale: 0.25
+minEfficiency: 1
+maxBoost: 2
+consumes: {
+	power: 14
+	items: [
+		graphite/1
+	]
+}
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawArcSmelt
+		}
+		{
+			type: DrawRegion
+			suffix: "-bottom"
+			drawPlan: false
+			layer: 29
+		}
+		{
+			type: DrawDefault
+		}
+	]
+}
+craftTime: 300
+outputItem: pandemonium-shunjeet/1
+research: pandemonium-putty-mixer
+requirements: [
+	graphite/250
+	titanium/150
+	thorium/100
+	surge-alloy/150
+	phase-fabric/75
+]

@@ -1,0 +1,31 @@
+name: compound
+localizedName: Compound
+description: "Constructs Waft units. Outputted units cannot be upgraded."
+type: UnitFactory
+health: 3240
+size: 5
+buildVisibility: shown
+category: units
+research: pandemonium-hatchery
+researchCostMultiplier: 0.5
+consumes: {
+	power: 16
+}
+plans: [
+	{
+	unit: pandemonium-waft
+	time: 6600
+	requirements: [
+		silicon/500
+		plastanium/400
+		surge-alloy/250
+		pandemonium-putty/300
+		]
+	}
+]
+requirements: [
+	silicon/500
+	thorium/650
+	surge-alloy/200
+	pandemonium-putty/360
+]

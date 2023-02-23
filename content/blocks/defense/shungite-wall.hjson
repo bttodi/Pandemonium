@@ -1,0 +1,16 @@
+type: wall
+name: shungite-wall
+localizedName: Shungite Wall
+description: "Protects structures from enemy projectiles and absorbs electric arcs and lasers. Blocks power connections."
+size: 2
+health: 2640
+armor: 44
+insulated: true
+absorbLasers: true
+buildVisibility: shown
+research: carbide-wall
+category: defense
+researchCostMultiplier: 0.5
+requirements: [
+	shungite/24
+]

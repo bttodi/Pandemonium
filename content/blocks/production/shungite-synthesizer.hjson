@@ -1,0 +1,55 @@
+type: HeatCrafter
+name: shungite-synthesizer
+localizedName: Shungite Synthesizer
+description: "Synthesizes shungite from carbide. Requires hydrogen and great amounts of power and heat."
+heatRequirement: 24
+maxEfficiency: 3
+category: crafting
+buildVisibility: shown
+health: 2580
+size: 3
+hasItems: true
+hasPower: true
+itemCapacity: 20
+consumes: {
+	power: 9
+	items: [
+		carbide/1
+	]
+	liquids: [
+		hydrogen/0.15
+	]
+}
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawMultiWeave
+			rotateSpeed2: 1.618
+		}
+		{
+			type: DrawArcSmelt
+		}
+		{
+			type: DrawRegion
+			suffix: "-bottom"
+			drawPlan: false
+			layer: 29
+		}
+		{
+			type: DrawDefault
+		}
+		{
+			type: DrawHeatInput
+		}
+	]
+}
+craftTime: 180
+outputItem: pandemonium-shungite/1
+research: phase-synthesizer
+requirements: [
+	tungsten/200
+	thorium/280
+	carbide/140
+	phase-fabric/80
+]

@@ -1,0 +1,30 @@
+name: hatchery
+localizedName: Hatchery
+description: "Produces Wisp units. Outputted units cannot be upgraded."
+type: UnitFactory
+health: 1280
+size: 3
+buildVisibility: shown
+category: units
+research: multiplicative-reconstructor
+researchCostMultiplier: 0.5
+consumes: {
+	power: 8
+}
+plans: [
+	{
+	unit: pandemonium-wisp
+	time: 2100
+	requirements: [
+		silicon/110
+		plastanium/60
+		pandemonium-putty/30
+		]
+	}
+]
+requirements: [
+	lead/400
+	silicon/340
+	thorium/260
+	plastanium/320
+]

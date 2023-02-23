@@ -1,0 +1,57 @@
+type: AttributeCrafter
+name: sulfur-extractor
+localizedName: Sulfur Extractor
+description: "Extracts and purifies sulfur from vents for use."
+category: production
+buildVisibility: shown
+health: 740
+size: 3
+hasItems: true
+itemCapacity: 30
+attribute: steam
+craftTime: 60
+baseEfficiency: 0
+boostScale: 0.112
+displayEfficiency: false
+minEfficiency: 9
+outputItem: pandemonium-sulfur/1
+research: impact-drill
+craftEffect: {
+	type: ParticleEffect
+	particles: 6
+	colorFrom: e8d174
+	colorTo: e8d17400
+	sizeFrom: 8
+	sizeTo: 2
+	lifetime: 120
+}
+consumes: {
+	power: 1.5
+	}
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawDefault
+		}
+		{
+			type: DrawRegion
+			suffix: "-bottom"
+			drawPlan: false
+			layer: 29
+		}
+		{
+			type: DrawShape
+			layer: 29.5
+			color: ffffa3
+			radius: 8
+			sides: 8
+			useWarmupRadius: true
+		}
+	]
+}
+requirements: [
+	beryllium/80
+	graphite/60
+	tungsten/50
+]

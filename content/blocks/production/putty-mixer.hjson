@@ -1,0 +1,54 @@
+type: GenericCrafter
+name: putty-mixer
+localizedName: Putty Mixer
+description: "Formulates putty from spore pods and phase fabric for use."
+category: crafting
+buildVisibility: shown
+health: 360
+size: 3
+hasItems: true
+hasPower: true
+itemCapacity: 30
+consumes: {
+	power: 3
+	items: [
+		spore-pod/6
+		phase-fabric/2
+	]
+}
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawRegion
+			suffix: "-bottom"
+			layer: 29
+		}
+		{
+			type: DrawRegion
+			suffix: "-spinner"
+			spinSprite: true
+			rotateSpeed: 2
+			layer: 31
+		}
+		{
+			type: DrawCultivator
+			sides: 4
+			spread: 8
+			plantColor: 5c5e9f
+			bottomColor: 5c5e9f
+			plantColorLight: 985bb0
+		}
+		{
+			type: DrawDefault
+		}
+	]
+}
+craftTime: 180
+outputItem: pandemonium-putty/3
+research: phase-weaver
+requirements: [
+	silicon/110
+	plastanium/80
+	thorium/60
+]

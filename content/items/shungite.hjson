@@ -1,0 +1,8 @@
+type: Item
+name: shungite
+localizedName: Shungite
+description: "Used in fortified structures and units."
+color: 23233f
+cost: 3
+research: carbide
+hiddenOnPlanets: [ "serpulo" ]

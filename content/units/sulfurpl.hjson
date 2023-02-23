@@ -1,0 +1,27 @@
+type: missile
+deathSound: none
+deathExplosionEffect: none
+hittable: false
+targetable: false
+lifetime: 10
+speed: 0
+physics: false
+drawBody: false
+drawEngines: false
+drawCell: false
+createScorch: false
+hidden: true
+bounded: false
+envEnabled: 17
+envDisabled: 0
+abilities: [
+	{
+	type: StatusFieldAbility
+	effect: pandemonium-sulfur-fervor
+	duration: 1800
+	range: 160
+	reload: 1
+	applyEffect: none
+	activeEffect: none
+	}
+]

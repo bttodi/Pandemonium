@@ -1,0 +1,7 @@
+type: Item
+name: shunjeet
+localizedName: Shungite
+description: "Used in fortified structures and units."
+color: 23233f
+cost: 3
+research: pandemonium-putty

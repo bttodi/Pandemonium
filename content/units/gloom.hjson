@@ -1,0 +1,82 @@
+name: gloom
+localizedName: Gloom
+description: "Fires a burst of bullets with a short reach."
+type: hover
+useEngineElevation: false
+speed: 1.75
+health: 1120
+fogRadius: 10
+range: 56
+envEnabled: 17
+envDisabled: 0
+itemCapacity: 0
+drag: 0.05
+accel: 0.1
+hitSize: 12
+drawEngines: false
+engineSize: 0
+research: {
+	parent: pandemonium-incubator
+	requirements: [
+		pandemonium-sulfur/1000
+	]
+}
+parts: [
+	{
+		type: HoverPart
+		x: -4
+		y: -4
+		layerOffset: -0.05
+		mirror: true
+		color: 92dd7e
+		stroke: 2
+	}
+	{
+		type: HoverPart
+		x: -4.5
+		y: 3.5
+		layerOffset: -0.05
+		mirror: true
+		color: 92dd7e
+		stroke: 2
+	}
+]
+engines: [
+	{
+		x: 0
+		y: -8
+		radius: 2
+		rotation: 270
+	}
+]
+weapons: [
+	{
+	reload: 22
+	shootSound: shootBig
+	mirror: false
+	x: 0
+	shootY: 4
+	reload: 30
+	shoot: {
+		type: ShootSpread
+		spread: 3
+		shots: 5
+	}
+	bullet: {
+		type: BasicBulletType
+		shrinkY: -2
+		damage: 15
+		lifetime: 15
+		speed: 4
+		keepVelocity: false
+		smokeEffect: none
+		hittable: false
+		width: 12
+		pierceArmor: true
+		pierce: true
+		pierceCap: 2
+		pierceBuilding: false
+		buildingDamageMultiplier: 0.25
+		}
+	}
+]

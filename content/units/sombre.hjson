@@ -1,0 +1,24 @@
+name: sombre
+localizedName: Sombre
+description: "Tanks enemy fire with its high armor and health pool."
+type: tank
+faceTarget: false
+speed: 0.8
+health: 12800
+armor: 16
+rotateMoveFirst: true
+omniMovement: false
+rotateSpeed: 1
+range: 128
+itemCapacity: 0
+hitSize: 36
+clipSize: 36
+accel: 0.1
+targetAir: false
+targetGround: false
+research: {
+	parent: pandemonium-strongbox
+	requirements: [
+		pandemonium-sulfur/6400
+	]
+}

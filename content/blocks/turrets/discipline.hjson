@@ -1,0 +1,38 @@
+type: PowerTurret
+name: discipline
+localizedName: Discipline
+description: "Damages and stalls up to four flying targets."
+category: turret
+research: tsunami
+health: 1760
+size: 3
+buildVisibility: shown
+recoil: 0
+range: 360
+shootCone: 180
+rotateSpeed: 0
+shootY: 0
+shootSound: none
+displayAmmoMultiplier: false
+targetInterval: 0
+shootEffect: none
+targetGround: false
+reload: 60
+loopSound: glow
+consumes: {
+	power: 7.5
+	}
+shootType: {
+	type: BulletType
+	spawnUnit: pandemonium-conviction
+	status: slow
+	statusDuration: 30
+	damage: 36
+	smokeEffect: none
+}
+requirements: [
+	graphite/150
+	silicon/100
+	plastanium/200
+	surge-alloy/150
+]

@@ -1,0 +1,10 @@
+type: Item
+name: putty
+localizedName: Putty
+description: "Used in production of units at hatcheries and compounds. Can be used to enrage units."
+color: 985bb0
+cost: 2
+radioactivity: 0.1
+flammability: 0.6
+research: spore-pod
+hiddenOnPlanets: [ "erekir" ]

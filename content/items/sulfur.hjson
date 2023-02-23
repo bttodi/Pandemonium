@@ -1,0 +1,9 @@
+type: Item
+name: sulfur
+localizedName: Sulfur
+description: "Used in production of units at incubators and strongboxes. Can be used to enrage units."
+color: ffffa3
+cost: 2
+flammability: 0.5
+research: tungsten
+hiddenOnPlanets: [ "serpulo" ]
