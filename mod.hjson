@@ -1,0 +1,7 @@
+name: "pandemonium"
+displayName: "[#f3b5b7[]]Pandemonium"
+author: bttodi
+description: "forsenPuke6"
+minGameVersion: "140.4"
+dependencies: [ ]
+hidden: false
