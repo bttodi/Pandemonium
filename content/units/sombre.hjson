@@ -13,9 +13,24 @@ range: 128
 itemCapacity: 0
 hitSize: 36
 clipSize: 36
-accel: 0.1
 targetAir: false
 targetGround: false
+treadFrames: 27
+treadPullOffset: 3
+treadRects: [
+	{
+		x: -15
+		y: 30
+		width: 15
+		height: 30
+	}
+	{
+		x: -67
+		y: 45
+		width: 30
+		height: 30
+	}
+]
 research: {
 	parent: pandemonium-strongbox
 	requirements: [
