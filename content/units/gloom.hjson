@@ -2,13 +2,12 @@ name: gloom
 localizedName: Gloom
 description: "Fires a burst of bullets with a short reach."
 type: hover
+template: ErekirUnitType
 useEngineElevation: false
 speed: 1.75
 health: 1120
 fogRadius: 10
 range: 56
-envEnabled: 17
-envDisabled: 0
 itemCapacity: 0
 drag: 0.05
 accel: 0.1
