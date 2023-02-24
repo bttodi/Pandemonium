@@ -1,4 +1,5 @@
 type: missile
+template: ErekirUnitType
 deathSound: none
 deathExplosionEffect: none
 hittable: false
@@ -12,8 +13,6 @@ drawCell: false
 createScorch: false
 hidden: true
 bounded: false
-envEnabled: 17
-envDisabled: 0
 abilities: [
 	{
 	type: StatusFieldAbility
