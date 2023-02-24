@@ -2,6 +2,7 @@ name: sombre
 localizedName: Sombre
 description: "Tanks enemy fire with its high armor and health pool."
 type: tank
+template: ErekirUnitType
 faceTarget: false
 speed: 0.8
 health: 12800
@@ -19,15 +20,15 @@ treadFrames: 27
 treadPullOffset: 3
 treadRects: [
 	{
-		x: -15
-		y: 30
-		width: 15
-		height: 30
-	}
-	{
 		x: -67
 		y: 45
 		width: 30
+		height: 30
+	}
+	{
+		x: -15
+		y: 30
+		width: 15
 		height: 30
 	}
 ]
