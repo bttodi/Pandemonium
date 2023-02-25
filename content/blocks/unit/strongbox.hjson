@@ -3,7 +3,7 @@ localizedName: Strongbox
 description: "Constructs Sombre units. Outputted units cannot be upgraded."
 type: UnitFactory
 health: 6480
-size: 5
+size: 7
 buildVisibility: shown
 category: units
 research: pandemonium-incubator
