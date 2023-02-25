@@ -5,7 +5,7 @@ deathExplosionEffect: none
 hittable: false
 targetable: false
 speed: 0
-lifetime: 8
+lifetime: 54
 physics: false
 drawBody: false
 drawEngines: false
@@ -24,7 +24,7 @@ abilities: [
 	status: electrified
 	statusDuration: 30
 	range: 480
-	reload: 6
+	reload: 30
 	damage: 60
 	maxTargets: 6
 	healPercent: 0.05
