@@ -9,7 +9,7 @@ buildVisibility: shown
 category: units
 research: pandemonium-strongbox
 researchCostMultiplier: 0.5
-itemCapacity: 240
+itemCapacity: 480
 consumes: {
 	power: 6.5
 	liquid: cyanogen/0.2
