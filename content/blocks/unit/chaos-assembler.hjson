@@ -1,0 +1,34 @@
+name: chaos-assembler
+localizedName: Chaos Assembler
+description: "Assembles Nihilus units out of inputted blocks."
+type: UnitAssembler
+health: 3400
+armor: 44
+size: 5
+buildVisibility: shown
+category: units
+research: pandemonium-strongbox
+researchCostMultiplier: 0.5
+consumes: {
+	power: 6.5
+	liquid: cyanogen/0.2
+}
+plans: [
+	{
+	unit: pandemonium-nihilus
+	time: 18000
+	requirements: [
+		carbide-wall-large/30
+		reinforced-surge-wall-large/15
+		pandemonium-shungite-wall/10
+		]
+	}
+]
+requirements: [
+	silicon/500
+	thorium/500
+	oxide/250
+	surge-alloy/400
+	carbide/250
+	pandemonium-shungite/100
+]
