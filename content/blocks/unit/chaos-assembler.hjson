@@ -1,6 +1,6 @@
 name: chaos-assembler
 localizedName: Chaos Assembler
-description: "Assembles Nihilus units out of inputted blocks."
+description: "Assembles Nihilus units out of inputted blocks and items."
 type: UnitAssembler
 health: 3400
 armor: 44
@@ -9,9 +9,14 @@ buildVisibility: shown
 category: units
 research: pandemonium-strongbox
 researchCostMultiplier: 0.5
+itemCapacity: 240
 consumes: {
 	power: 6.5
 	liquid: cyanogen/0.2
+	items: [
+		silicon/480
+		pandemonium-shungite/240
+	]
 }
 plans: [
 	{
@@ -20,7 +25,6 @@ plans: [
 	requirements: [
 		carbide-wall-large/30
 		reinforced-surge-wall-large/15
-		pandemonium-shungite-wall/10
 		]
 	}
 ]
