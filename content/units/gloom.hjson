@@ -50,7 +50,6 @@ engines: [
 ]
 weapons: [
 	{
-	reload: 22
 	shootSound: shootBig
 	mirror: false
 	x: 0
