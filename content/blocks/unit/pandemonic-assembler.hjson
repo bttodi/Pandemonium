@@ -1,0 +1,38 @@
+name: pandemonic-assembler
+localizedName: Pandemonic Assembler
+description: "Assembles Noumenon units out of inputted units and items."
+type: UnitAssembler
+health: 3400
+armor: 44
+size: 5
+buildVisibility: shown
+category: units
+research: pandemonium-compound
+researchCostMultiplier: 0.5
+itemCapacity: 800
+consumes: {
+	power: 13
+	liquid: cryofluid/2
+	items: [
+		surge-alloy/800
+		phase-fabric/500
+		pandemonium-shunjeet/240
+	]
+}
+plans: [
+	{
+	unit: pandemonium-noumenon
+	time: 27000
+	requirements: [
+		zenith/15
+		]
+	}
+]
+requirements: [
+	silicon/600
+	thorium/600
+	plastanium/400
+	surge-alloy/400
+	phase-fabric/350
+	pandemonium-shunjeet/100
+]
