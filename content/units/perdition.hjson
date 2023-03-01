@@ -25,10 +25,10 @@ abilities: [
 	statusDuration: 30
 	range: 480
 	reload: 30
-	damage: 60
+	damage: 75
 	maxTargets: 6
 	healPercent: 0.05
 	sectors: 0
-	color: e8d174
+	color: 85b0cc
 	}
 ]
