@@ -95,5 +95,6 @@ abilities: [
 		orbMidScl: 0.5
 		y: 2
 		display: false
+		layer: 89.99
 	}
 ]
