@@ -1,0 +1,143 @@
+name: noumenon
+localizedName: Noumenon
+description: "Fires salvos of fragmentary shells. Suppresses enemy structure repair blocks."
+type: flying
+template: ErekirUnitType
+flying: true
+faceTarget: false
+speed: 1
+health: 16000
+armor: 44
+rotateSpeed: 1
+itemCapacity: 0
+hitSize: 48
+lowAltitude: true
+drag: 0.025
+accel: 0.1
+engineSize: 0
+research: {
+	parent: pandemonium-pandemonic-assembler
+	requirements: [
+		pandemonium-shunjeet/2000
+	]
+}
+weapons: [
+	{
+	name: noumenon-weapon
+	reload: 90
+	shootSound: mediumCannon
+	x: 16
+	rotate: true
+	inaccuracy: 3
+	rotateSpeed: 4
+	bullet: {
+		type: BasicBulletType
+		damage: 240
+		lifetime: 60
+		speed: 6
+		smokeEffect: none
+		hittable: false
+		reflectable: false
+		width: 12
+		height: 12
+		shrinkY: 0
+		despawnEffect: bigShockwave
+		hitEffect: bigShockwave
+		despawnSound: dullExplosion
+		hitSound: dullExplosion
+		smokeEffect: {
+			type: ParticleEffect
+			particles: 10
+			lifetime: 48
+			baseLength: 16
+			length: 32
+			spin: -12
+			sizeFrom: 4
+			region: circle
+			colorFrom: ffffff
+			colorTo: ff2070
+			lightScl: 0
+			interp: pow4Out
+			sizeInterp: linear
+			cone: 15
+			}
+		shootEffect: none
+		sprite: missile-large
+		frontColor: ff7fae
+		backColor: ff2070
+		trailWidth: 4
+		trailLength: 8
+		trailColor: ff2070
+		fragSpread: 22.5
+		fragBullets: 16
+		fragOnAbsorb: false
+		fragRandomSpread: 0
+		fragVelocityMin: 1
+		fragBullet: {
+			type: BasicBulletType
+			sprite: pandemonium-square
+			damage: 50
+			width: 4
+			height: 4
+			frontColor: ff2070
+			speed: 3
+			lifetime: 40
+			spin: -12
+			shrinkY: 0
+			pierce: true
+			hitEffect: hitLaserColor
+			despawnEffect: hitLaserColor
+			}
+		}
+	shoot: {
+		shots: 3
+		shotDelay: 10
+		}
+	}
+]
+engines: [
+	{
+		x: 5.5
+		y: -27
+		radius: 4
+		rotation: 270
+	}
+	{
+		x: -5.5
+		y: -27
+		radius: 4
+		rotation: 270
+	}
+	{
+		x: -14.5
+		y: -24
+		radius: 4
+		rotation: 270
+	}
+	{
+		x: 14.5
+		y: -24
+		radius: 4
+		rotation: 270
+	}
+]
+abilities: [
+	{
+		type: SuppressionFieldAbility
+		color: 7a5a9a
+		particleColor: 50477b
+		active: false
+		orbRadius: 5
+		y: 13.7
+		display: false
+		layer: 89.99
+	}
+	{
+		type: SuppressionFieldAbility
+		color: 7a5a9a
+		particleColor: 50477b
+		orbRadius: 5
+		y: -13.7
+		layer: 89.99
+	}
+]
