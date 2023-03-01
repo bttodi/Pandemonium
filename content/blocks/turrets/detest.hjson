@@ -30,7 +30,7 @@ shootType: {
 	spawnUnit: pandemonium-perdition
 	status: electrified
 	statusDuration: 30
-	damage: 60
+	damage: 75
 	smokeEffect: none
 }
 shoot: {
@@ -40,15 +40,6 @@ drawer:[
 	{
 		type: DrawTurret
 		basePrefix: "reinforced-"
-		parts: [
-			{
-				type: HoverPart
-				radius: 8
-				color: ffffa3
-				stroke: 2
-				minStroke: 0
-			}
-		]
 	}
 ]
 requirements: [
