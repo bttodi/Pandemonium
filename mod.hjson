@@ -1,7 +1,8 @@
 name: "pandemonium"
 displayName: "[#f3b5b7[]]Pandemonium"
 author: bttodi
-description: "forsenPuke6"
+description: "An arbitrary and aimless assemblage of accumulated assorted additions."
+subtitle: "forsenSmug 18:10"
 minGameVersion: "140.4"
 dependencies: [ ]
 hidden: false
