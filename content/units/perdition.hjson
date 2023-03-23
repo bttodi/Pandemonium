@@ -23,9 +23,9 @@ abilities: [
 	type: EnergyFieldAbility
 	status: electrified
 	statusDuration: 30
-	range: 480
+	range: 360
 	reload: 30
-	damage: 75
+	damage: 45
 	maxTargets: 6
 	healPercent: 0.05
 	sectors: 0
