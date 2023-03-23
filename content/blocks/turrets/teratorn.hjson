@@ -18,9 +18,6 @@ recoil: 1
 shootY: 4
 maxAmmo: 16
 inaccuracy: 30
-consumes: {
-	power: 8
-	}
 ammoTypes: {
 	blast-compound: {
 		type: BasicBulletType
