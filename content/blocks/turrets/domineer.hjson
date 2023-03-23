@@ -1,7 +1,7 @@
 type: PowerTurret
 name: domineer
 localizedName: Domineer
-description: "jffjbqcf9ma5wekzrgue8p8r9"
+description: "Fires homing, piercing squares at targets."
 category: turret
 research: pandemonium-discipline
 health: 7680
@@ -12,7 +12,7 @@ absorbLasers: true
 buildVisibility: shown
 targetAir: true
 targetGround: true
-range: 480
+range: 360
 reload: 55
 shootSound: largeCannon
 recoil: 16
@@ -26,7 +26,7 @@ shootType: {
 	ammoMultiplier: 1
 	type: BasicBulletType
 	layer: 99
-	damage: 1600
+	damage: 480
 	buildingDamageMultiplier: 0.3
 	hitSize: 24
 	pierce: true
@@ -34,7 +34,7 @@ shootType: {
 	pierceArmor: true
 	reflectable: false
 	absorbable: false
-	lifetime: 120
+	lifetime: 90
 	width: 16
 	height: 16
 	speed: 4
@@ -50,12 +50,12 @@ shootType: {
 	hitEffect: none
 	weaveScale: 10
 	weaveMag: 1
-	trailChance: 2
+	trailInterval: 1
 	trailEffect: {
 		type: ParticleEffect
 		startDelay: 1
 		particles: 1
-		lifetime: 30
+		lifetime: 40
 		sizeFrom: 8
 		colorFrom: ffffff
 		colorTo: ff2070
@@ -106,5 +106,5 @@ requirements: [
 	silicon/1500
 	thorium/1500
 	surge-alloy/500
-	pandemonium-shunjeet/250
+	pandemonium-shunjeet/350
 ]
