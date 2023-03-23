@@ -1,0 +1,71 @@
+type: ItemTurret
+name: teratorn
+localizedName: Teratorn
+description: "Fires a swarm of homing rockets at grounded targets."
+category: turret
+research: swarmer
+health: 1780
+size: 4
+buildVisibility: shown
+targetInterval: 0
+targetAir: false
+range: 720
+reload: 6
+canOverdrive: false
+shootCone: 45
+shootSound: missileSmall
+recoil: 1
+shootY: 4
+maxAmmo: 16
+inaccuracy: 30
+consumes: {
+	power: 8
+	}
+ammoTypes: {
+	blast-compound: {
+		type: BasicBulletType
+		smokeEffect: shootBigSmoke
+		shootEffect: none
+		collidesAir: false
+		damage: 75
+		splashDamage: 85
+		splashDamageRadius: 20
+		buildingDamageMultiplier: 0.3
+		reflectable: false
+		hitSound: bang
+		despawnSound: bang
+		hitEffect: blastExplosion
+		despawnEffect: blastExplosion
+		speed: 8
+		lifetime: 100
+		width: 8
+		height: 16
+		homingPower: 0.3
+		homingRange: 480
+		homingDelay: 45
+		sprite: pandemonium-tt-rocket
+		shrinkY: 0
+		trailInterval: 1
+		spin: 16
+		weaveScale: 2
+		weaveMag: 15
+		trailEffect: {
+			type: ParticleEffect
+			startDelay: 1
+			particles: 1
+			lifetime: 60
+			length: 0
+			colorFrom: ffffff7f
+			colorTo: ffffff00
+			sizeFrom: 1
+			sizeInterp: circleOut
+			sizeTo: 4
+		}
+	}
+}
+requirements: [
+	silicon/200
+	titanium/300
+	thorium/250
+	surge-alloy/150
+]

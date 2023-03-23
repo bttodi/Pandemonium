@@ -1,0 +1,51 @@
+type: PowerTurret
+name: dwindle
+localizedName: Dwindle
+description: "Fries up to six nearby targets."
+category: turret
+research: pandemonium-decadere
+health: 7680
+armor: 44
+size: 5
+canOverdrive: false
+absorbLasers: true
+buildVisibility: shown
+recoil: 0
+range: 360
+shootCone: 180
+rotateSpeed: 0
+shootY: 0
+shootSound: none
+displayAmmoMultiplier: false
+targetInterval: 0
+shootEffect: none
+reload: 6
+loopSound: glow
+researchCostMultiplier: 0.5
+consumes: {
+	power: 50
+	}
+shootType: {
+	type: BulletType
+	spawnUnit: pandemonium-perdition
+	status: electrified
+	statusDuration: 30
+	damage: 75
+	smokeEffect: none
+}
+shoot: {
+	shots: 2
+}
+drawer:[
+	{
+		type: DrawTurret
+		basePrefix: "reinforced-"
+	}
+]
+requirements: [
+	graphite/1000
+	silicon/850
+	thorium/1250
+	surge-alloy/450
+	pandemonium-shungite/350
+]
