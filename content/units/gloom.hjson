@@ -63,7 +63,7 @@ weapons: [
 	bullet: {
 		type: BasicBulletType
 		shrinkY: -2
-		damage: 15
+		damage: 20
 		lifetime: 15
 		speed: 4
 		keepVelocity: false
