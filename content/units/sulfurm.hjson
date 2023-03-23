@@ -36,14 +36,29 @@ weapons: [
 				{
 					type: WaveEffect
 					colorFrom: ffffa3
-					colorTo: e8d174
+					colorTo: ffffa3
 					lightColor: ffffa3
 					lightScl: 1.5
 					interp: pow10Out
 					sizeFrom: 0
 					sizeTo: 160
-					strokeFrom: 10
-					lifetime: 300
+					strokeFrom: 20
+					lifetime: 90
+					layer: 11
+				}
+				{
+					type: WaveEffect
+					colorFrom: ffffa3
+					colorTo: ffffa3
+					lightColor: ffffa3
+					lightScl: 1.5
+					interp: pow10Out
+					sizeFrom: 0
+					sizeTo: 160
+					strokeFrom: 20
+					lifetime: 90
+					layer: 12
+					startDelay: 10
 				}
 				{
 					type: WaveEffect
@@ -56,6 +71,7 @@ weapons: [
 					sizeTo: 160
 					strokeFrom: 5
 					lifetime: 300
+					layer: 11
 				}
 				{
 					type: ParticleEffect
@@ -68,7 +84,8 @@ weapons: [
 					sizeFrom: 40
 					particles: 20
 					lifetime: 330
-					length: 160
+					baseLength: 120
+					layer: 11
 				}
 				{
 					type: ParticleEffect
@@ -81,7 +98,8 @@ weapons: [
 					sizeFrom: 30
 					particles: 20
 					lifetime: 300
-					length: 160
+					baseLength: 130
+					layer: 11
 				}
 				{
 					type: ParticleEffect
@@ -94,7 +112,8 @@ weapons: [
 					sizeFrom: 20
 					particles: 20
 					lifetime: 270
-					length: 160
+					baseLength: 140
+					layer: 11
 				}
 			]
 		}
