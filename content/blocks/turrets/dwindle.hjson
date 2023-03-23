@@ -30,7 +30,7 @@ shootType: {
 	spawnUnit: pandemonium-perdition
 	status: electrified
 	statusDuration: 30
-	damage: 75
+	damage: 45
 	smokeEffect: none
 }
 shoot: {
