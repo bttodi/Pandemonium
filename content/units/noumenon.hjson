@@ -32,7 +32,7 @@ weapons: [
 	rotateSpeed: 4
 	bullet: {
 		type: BasicBulletType
-		damage: 160
+		damage: 120
 		lifetime: 40
 		speed: 6
 		smokeEffect: none
