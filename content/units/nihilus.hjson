@@ -6,7 +6,7 @@ type: flying
 flying: true
 faceTarget: false
 speed: 1
-health: 6000
+health: 2000
 armor: 44
 rotateSpeed: 1
 itemCapacity: 0
@@ -80,7 +80,7 @@ abilities: [
 	}
 	{
 		type: ForceFieldAbility
-		max: 24000
+		max: 32000
 		regen: 3
 		radius: 160
 		sides: 17
@@ -93,7 +93,7 @@ abilities: [
 		active: false
 		orbRadius: 8
 		orbMidScl: 0.5
-		y: 2
+		y: 1.5
 		display: false
 		layer: 89.99
 	}
