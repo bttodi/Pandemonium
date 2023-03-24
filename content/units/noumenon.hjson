@@ -32,8 +32,8 @@ weapons: [
 	rotateSpeed: 4
 	bullet: {
 		type: BasicBulletType
-		damage: 240
-		lifetime: 60
+		damage: 160
+		lifetime: 40
 		speed: 6
 		smokeEffect: none
 		hittable: false
@@ -76,7 +76,7 @@ weapons: [
 		fragBullet: {
 			type: BasicBulletType
 			sprite: pandemonium-square
-			damage: 50
+			damage: 15
 			width: 4
 			height: 4
 			frontColor: ff2070
@@ -84,9 +84,9 @@ weapons: [
 			lifetime: 40
 			spin: -12
 			shrinkY: 0
-			pierce: true
 			hitEffect: hitLaserColor
 			despawnEffect: hitLaserColor
+			pierceArmor: true
 			}
 		}
 	shoot: {
@@ -136,6 +136,8 @@ abilities: [
 		type: SuppressionFieldAbility
 		color: 7a5a9a
 		particleColor: 50477b
+		active: false
+		display: false
 		orbRadius: 5
 		y: -13.7
 		layer: 89.99
