@@ -6,7 +6,7 @@ type: flying
 flying: true
 faceTarget: false
 speed: 1
-health: 2000
+health: 3000
 armor: 44
 rotateSpeed: 1
 itemCapacity: 0
@@ -80,8 +80,8 @@ abilities: [
 	}
 	{
 		type: ForceFieldAbility
-		max: 32000
-		regen: 3
+		max: 27000
+		regen: 1
 		radius: 160
 		sides: 17
 		cooldown: 1800
