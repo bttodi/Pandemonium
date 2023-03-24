@@ -1,6 +1,6 @@
 name: noumenon
 localizedName: Noumenon
-description: "Fires salvos of fragmentary shells. Suppresses enemy structure repair blocks."
+description: "Fires salvos of fragmentary shells."
 type: flying
 template: ErekirUnitType
 flying: true
