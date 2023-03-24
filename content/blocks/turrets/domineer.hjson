@@ -12,7 +12,7 @@ absorbLasers: true
 buildVisibility: shown
 targetAir: true
 targetGround: true
-range: 360
+range: 320
 reload: 55
 shootSound: largeCannon
 recoil: 16
@@ -26,7 +26,7 @@ shootType: {
 	ammoMultiplier: 1
 	type: BasicBulletType
 	layer: 99
-	damage: 480
+	damage: 360
 	buildingDamageMultiplier: 0.3
 	hitSize: 24
 	pierce: true
@@ -34,7 +34,7 @@ shootType: {
 	pierceArmor: true
 	reflectable: false
 	absorbable: false
-	lifetime: 90
+	lifetime: 75
 	width: 16
 	height: 16
 	speed: 4
