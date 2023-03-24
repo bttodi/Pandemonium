@@ -18,9 +18,9 @@ plans: [
 	time: 5400
 	requirements: [
 		silicon/200
-		tungsten/700
+		tungsten/360
 		thorium/160
-		pandemonium-sulfur/300
+		pandemonium-sulfur/240
 		]
 	}
 ]
