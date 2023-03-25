@@ -1,6 +1,6 @@
 name: chaos-assembler
 localizedName: Chaos Assembler
-description: "Assembles Nihilus units out of inputted blocks and items."
+description: "Assembles Antinomy and Nihilus units out of inputted blocks and items."
 type: UnitAssembler
 health: 3400
 armor: 44
@@ -14,11 +14,18 @@ consumes: {
 	power: 6.5
 	liquid: cyanogen/0.2
 	items: [
-		silicon/480
+		silicon/300
 		pandemonium-shungite/240
 	]
 }
 plans: [
+	{
+	unit: pandemonium-antinomy
+	time: 9000
+	requirements: [
+		anthicus/3
+		]
+	}
 	{
 	unit: pandemonium-nihilus
 	time: 18000
