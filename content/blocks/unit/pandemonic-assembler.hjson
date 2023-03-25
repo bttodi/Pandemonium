@@ -14,8 +14,8 @@ consumes: {
 	power: 13
 	liquid: cryofluid/2
 	items: [
-		surge-alloy/800
-		phase-fabric/500
+		surge-alloy/640
+		phase-fabric/360
 		pandemonium-shunjeet/240
 	]
 }
@@ -24,7 +24,7 @@ plans: [
 	unit: pandemonium-noumenon
 	time: 27000
 	requirements: [
-		zenith/15
+		zenith/12
 		]
 	}
 ]
