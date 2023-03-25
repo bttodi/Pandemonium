@@ -1,0 +1,69 @@
+name: antinomy
+localizedName: Antinomy
+description: "Launches pairs of high-speed cluster missiles toward targets."
+type: flying
+template: ErekirUnitType
+flying: true
+speed: 1.2
+health: 1200
+armor: 44
+rotateSpeed: 3
+itemCapacity: 0
+hitSize: 28
+drag: 0.025
+accel: 0.1
+range: 480
+engineSize: 0
+research: {
+	parent: pandemonium-chaos-assembler
+	requirements: [
+		pandemonium-shungite/1000
+	]
+}
+weapons: [
+	{
+	reload: 300
+	alternate: false
+	shootSound: missileLarge
+	predictTarget: false
+	x: 8
+	bullet: {
+		type: BulletType
+		speed: 0
+		shootEffect: {
+			type: ParticleEffect
+			particles: 32
+			cone: 20
+			lifetime: 30
+			baseLength: 8
+			length: -56
+			colorFrom: feb380
+			colorTo: feb380
+			line: true
+			sizeFrom: 4
+			strokeFrom: 4
+			interp: circleOut
+			}
+		smokeEffect: none
+		spawnUnit: pandemonium-antinomy-missile
+		}
+	}
+]
+engines: [
+	{
+		y: -16
+		radius: 4
+		rotation: 270
+	}
+]
+parts: [
+	{
+		type: RegionPart
+		mirror: true
+		x: 8
+		moveX: -8
+		layer: 114
+		progress: reload
+		suffix: "-missile"
+	}
+]
