@@ -9,7 +9,7 @@ size: 4
 buildVisibility: shown
 targetInterval: 0
 targetAir: false
-range: 720
+range: 440
 reload: 6
 canOverdrive: false
 shootCone: 45
@@ -34,12 +34,12 @@ ammoTypes: {
 		hitEffect: blastExplosion
 		despawnEffect: blastExplosion
 		speed: 8
-		lifetime: 100
+		lifetime: 60
 		width: 8
 		height: 16
 		homingPower: 0.3
 		homingRange: 480
-		homingDelay: 45
+		homingDelay: 25
 		sprite: pandemonium-tt-rocket
 		shrinkY: 0
 		trailInterval: 1
