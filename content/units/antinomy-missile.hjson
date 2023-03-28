@@ -74,6 +74,7 @@ weapons: [
 			collides: false
 			absorbable: false
 			reflectable: false
+			hittable: false
 			lifetime: 40
 			speed: 1
 			splashDamage: 30
